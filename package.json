@@ -1,0 +1,59 @@
+{
+  "name": "react-grille",
+  "version": "1.0.0",
+  "description": "Make a grille pattern!",
+  "keywords": [
+    "react",
+    "grille",
+    "mesh",
+    "grid"
+  ],
+  "main": "dist/react-grille.js",
+  "module": "dist/react-grille.esm.js",
+  "browser": "dist/react-grille.umd.js",
+  "repository": "git@github.com:rmariuzzo/react-grille.git",
+  "author": "Rubens Mariuzzo <rubens@mariuzzo.com>",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "dist",
+    "README.md",
+    "yarn.lock"
+  ],
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/addon-links": "^3.2.16",
+    "@storybook/react": "^3.2.16",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.1.1",
+    "eslint": "^4.12.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^21.2.1",
+    "prettier": "^1.8.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-input-handler": "^1.0.0",
+    "rollup": "^0.51.5",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-filesize": "^1.4.2",
+    "rollup-plugin-uglify": "^2.0.1",
+    "uglify-es": "^3.1.9"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "storybook": "cross-env NODE_ENV=development start-storybook -p 6006",
+    "build-storybook": "cross-env NODE_ENV=development build-storybook -o docs"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
+}
